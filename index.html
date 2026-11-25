@@ -1,0 +1,74 @@
+2026-11-25T06:03:57.327Z	Initializing build environment...
+2026-11-25T06:04:08.755Z	Success: Finished initializing build environment
+2026-11-25T06:04:10.002Z	Cloning repository...
+2026-11-25T06:04:10.968Z	No build output detected to cache. Skipping.
+2026-11-25T06:04:10.968Z	No dependencies detected to cache. Skipping.
+2026-11-25T06:04:10.969Z	Detected the following tools from environment: 
+2026-11-25T06:04:11.213Z	Executing user deploy command: npx wrangler deploy
+2026-11-25T06:04:12.706Z	npm warn exec The following package was not found and will be installed: wrangler@4.168.0
+2026-11-25T06:04:21.304Z	npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+2026-11-25T06:04:26.275Z	
+2026-11-25T06:04:26.275Z	 ⛅️ wrangler 4.168.0
+2026-11-25T06:04:26.275Z	────────────────────
+2026-11-25T06:04:26.327Z	
+2026-11-25T06:04:26.327Z	Detected Project Settings:
+2026-11-25T06:04:26.327Z	 - Worker Name: telegram
+2026-11-25T06:04:26.327Z	 - Framework: Static
+2026-11-25T06:04:26.328Z	 - Output Directory: .
+2026-11-25T06:04:26.328Z	
+2026-11-25T06:04:26.328Z	? Do you want to modify these settings?
+2026-11-25T06:04:26.328Z	🤖 Using fallback value in non-interactive context: no
+2026-11-25T06:04:26.331Z	
+2026-11-25T06:04:26.337Z	📄 Create wrangler.jsonc:
+2026-11-25T06:04:26.338Z	  {
+2026-11-25T06:04:26.338Z	    "$schema": "node_modules/wrangler/config-schema.json",
+2026-11-25T06:04:26.338Z	    "name": "telegram",
+2026-11-25T06:04:26.338Z	    "compatibility_date": "2026-11-23",
+2026-11-25T06:04:26.338Z	    "observability": {
+2026-11-25T06:04:26.338Z	      "enabled": true
+2026-11-25T06:04:26.338Z	    },
+2026-11-25T06:04:26.338Z	    "assets": {
+2026-11-25T06:04:26.338Z	      "directory": "."
+2026-11-25T06:04:26.338Z	    }
+2026-11-25T06:04:26.338Z	  }
+2026-11-25T06:04:26.338Z	
+2026-11-25T06:04:26.338Z	? Proceed with setup?
+2026-11-25T06:04:26.339Z	🤖 Using fallback value in non-interactive context: yes
+2026-11-25T06:04:26.343Z	├ Adding Wrangler files to the .gitignore file
+2026-11-25T06:04:26.343Z	│ created .gitignore file
+2026-11-25T06:04:26.343Z	│
+2026-11-25T06:04:26.343Z	├ Adding Wrangler files to the .assetsignore file
+2026-11-25T06:04:26.344Z	│ created .assetsignore file
+2026-11-25T06:04:26.344Z	│
+2026-11-25T06:04:28.559Z	🌀 Building list of assets...
+2026-11-25T06:04:28.561Z	✨ Read 62 files from the assets directory /opt/buildhome/repo
+2026-11-25T06:04:28.567Z	🌀 Starting asset upload...
+2026-11-25T06:04:30.406Z	🌀 Found 4 new or modified static assets to upload. Proceeding with upload...
+2026-11-25T06:04:30.406Z	+ /README.md
+2026-11-25T06:04:30.406Z	+ /index.html
+2026-11-25T06:04:30.406Z	+ /.gitignore
+2026-11-25T06:04:30.406Z	+ /wrangler.jsonc
+2026-11-25T06:04:31.395Z	Uploaded 1 of 4 assets
+2026-11-25T06:04:31.437Z	Uploaded 2 of 4 assets
+2026-11-25T06:04:31.564Z	Uploaded 4 of 4 assets
+2026-11-25T06:04:31.565Z	✨ Success! Uploaded 4 files (1.16 sec)
+2026-11-25T06:04:31.565Z	
+2026-11-25T06:04:31.566Z	Total Upload: 0.33 KiB / gzip: 0.24 KiB
+2026-11-25T06:04:34.006Z	Uploaded telegram (6.24 sec)
+2026-11-25T06:04:35.566Z	▲ [WARNING] Because 'workers_dev' is not in your wrangler.jsonc, it will be enabled for this deployment by default.
+2026-11-25T06:04:35.566Z	
+2026-11-25T06:04:35.566Z	  To override this setting, you can disable workers.dev by explicitly setting 'workers_dev = false' in your wrangler.jsonc.
+2026-11-25T06:04:35.566Z	
+2026-11-25T06:04:35.566Z	
+2026-11-25T06:04:35.568Z	▲ [WARNING] Because your 'workers.dev' route is enabled and your 'preview_urls' setting is not in your wrangler.jsonc, Preview URLs will be enabled for this deployment by default.
+2026-11-25T06:04:35.568Z	
+2026-11-25T06:04:35.568Z	  To override this setting, you can disable Preview URLs by explicitly setting 'preview_urls = false' in your wrangler.jsonc.
+2026-11-25T06:04:35.568Z	
+2026-11-25T06:04:35.568Z	
+2026-11-25T06:04:35.569Z	Deployed telegram triggers (1.56 sec)
+2026-11-25T06:04:35.569Z	  https://telegram.mohannaidugatti.workers.dev
+2026-11-25T06:04:35.569Z	Current Version ID: 75715db4-3274-41a8-9bdc-4ef952b5e46f
+2026-11-25T06:04:35.570Z	
+2026-11-25T06:04:35.570Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-11-25T06:04:35.696Z	Success: Deploy command completed
+2026-11-25T06:04:35.942Z	✨ Success! Build completed.
